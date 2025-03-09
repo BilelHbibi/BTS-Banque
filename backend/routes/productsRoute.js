@@ -3,9 +3,9 @@ const router = express.Router();
 import Product from "../models/productModel.js";
 import authMiddleeware from "../middlwares/authMiddleeware.js";
 import cloudinary from "../config/cloudinaryConfig.js";
-import multer from "multer";
 import User from "../models/userModel.js";
 import Notification from "../models/notificationModel.js";
+import multer from "multer";
 
 // add a new product
 router.post("/add-product", authMiddleeware, async (req, res) => {
